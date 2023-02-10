@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo samurai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m89-1c-4xZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywX-yB-WeK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen_2023-02-09_162518328-removebg-preview.png" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-kY-o0B">
+                                        <rect key="frame" x="0.0" y="46.666666666666657" width="141" height="35"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-2S-jbw">
+                                        <rect key="frame" x="177" y="34" width="60" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="swords-power.png"/>
+                                        <connections>
+                                            <segue destination="omD-L8-lDa" kind="show" id="yso-9p-L3o"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen_2023-02-09_162518328-removebg-preview.png" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-ix-AWO">
+                                        <rect key="frame" x="273" y="46.666666666666657" width="141" height="35"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ILB-2S-jbw" firstAttribute="height" secondItem="ywX-yB-WeK" secondAttribute="height" multiplier="0.46875" id="4hD-0L-M4o"/>
+                                    <constraint firstItem="pYl-ix-AWO" firstAttribute="height" secondItem="ywX-yB-WeK" secondAttribute="height" multiplier="0.273438" id="EpW-2e-f2C"/>
+                                    <constraint firstItem="eb1-kY-o0B" firstAttribute="leading" secondItem="ywX-yB-WeK" secondAttribute="leading" id="IDi-wS-yzC"/>
+                                    <constraint firstItem="pYl-ix-AWO" firstAttribute="centerY" secondItem="ILB-2S-jbw" secondAttribute="centerY" id="Mif-yK-16Y"/>
+                                    <constraint firstItem="pYl-ix-AWO" firstAttribute="width" secondItem="ywX-yB-WeK" secondAttribute="width" multiplier="0.34058" id="ZPJ-CT-fNB"/>
+                                    <constraint firstItem="ILB-2S-jbw" firstAttribute="centerX" secondItem="ywX-yB-WeK" secondAttribute="centerX" id="bo3-gN-76Y"/>
+                                    <constraint firstItem="ILB-2S-jbw" firstAttribute="centerY" secondItem="ywX-yB-WeK" secondAttribute="centerY" id="ck2-YG-D8l"/>
+                                    <constraint firstItem="eb1-kY-o0B" firstAttribute="height" secondItem="ywX-yB-WeK" secondAttribute="height" multiplier="0.273438" id="dQ9-bw-Xki"/>
+                                    <constraint firstItem="eb1-kY-o0B" firstAttribute="width" secondItem="ywX-yB-WeK" secondAttribute="width" multiplier="0.34058" id="j2d-9i-p42"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYl-ix-AWO" secondAttribute="trailing" id="kCL-2X-chj"/>
+                                    <constraint firstItem="ILB-2S-jbw" firstAttribute="centerY" secondItem="eb1-kY-o0B" secondAttribute="centerY" id="nLI-KK-WFA"/>
+                                    <constraint firstItem="ILB-2S-jbw" firstAttribute="width" secondItem="ywX-yB-WeK" secondAttribute="width" multiplier="0.144928" id="tIc-Xr-9Mb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pZ-Zy-HHR">
+                                <rect key="frame" x="0.0" y="128" width="414" height="608"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnG-0F-8Cr">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-Xi-gFI">
+                                                <rect key="frame" x="43.666666666666657" y="31" width="120" height="120"/>
+                                                <state key="normal" title="Button" image="Historia de las espadas.jpg"/>
+                                                <connections>
+                                                    <segue destination="ZeM-Tr-jI0" kind="show" id="N2V-r4-dId"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historia de las espadas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-AV-ONA">
+                                                <rect key="frame" x="15.333333333333329" y="161" width="176.33333333333337" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XgQ-Xi-gFI" firstAttribute="height" secondItem="cnG-0F-8Cr" secondAttribute="height" multiplier="0.594059" id="1mH-di-e5k"/>
+                                            <constraint firstItem="Hsn-AV-ONA" firstAttribute="centerX" secondItem="cnG-0F-8Cr" secondAttribute="centerX" id="Cre-wp-zhb"/>
+                                            <constraint firstItem="XgQ-Xi-gFI" firstAttribute="centerY" secondItem="cnG-0F-8Cr" secondAttribute="centerY" multiplier="0.9" id="MpY-S6-Mce"/>
+                                            <constraint firstItem="XgQ-Xi-gFI" firstAttribute="centerX" secondItem="cnG-0F-8Cr" secondAttribute="centerX" id="P9s-Hi-vCK"/>
+                                            <constraint firstItem="Hsn-AV-ONA" firstAttribute="height" secondItem="cnG-0F-8Cr" secondAttribute="height" multiplier="0.10396" id="RLk-C9-2K6"/>
+                                            <constraint firstItem="XgQ-Xi-gFI" firstAttribute="width" secondItem="cnG-0F-8Cr" secondAttribute="width" multiplier="0.57971" id="VD2-ul-zLR"/>
+                                            <constraint firstItem="Hsn-AV-ONA" firstAttribute="top" secondItem="XgQ-Xi-gFI" secondAttribute="bottom" constant="10" id="cTJ-vG-Tnk"/>
+                                            <constraint firstItem="Hsn-AV-ONA" firstAttribute="width" secondItem="cnG-0F-8Cr" secondAttribute="width" multiplier="0.851852" id="uOA-jR-cGK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mR2-Xb-P9a">
+                                        <rect key="frame" x="0.0" y="202" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU6-Ma-FA0">
+                                                <rect key="frame" x="37.333333333333329" y="24.666666666666686" width="132.33333333333337" height="132.33333333333334"/>
+                                                <state key="normal" title="Button" image="Blacksmith-Swordsmith- (2).png"/>
+                                                <connections>
+                                                    <segue destination="ALs-0t-STZ" kind="show" id="L6l-jb-v8t"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forjado de espadas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Sq1-Ai-3OE">
+                                                <rect key="frame" x="28.666666666666671" y="167" width="150" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NU6-Ma-FA0" firstAttribute="centerY" secondItem="mR2-Xb-P9a" secondAttribute="centerY" multiplier="0.9" id="0YZ-ch-zTY"/>
+                                            <constraint firstItem="Sq1-Ai-3OE" firstAttribute="width" secondItem="mR2-Xb-P9a" secondAttribute="width" multiplier="0.724638" id="3dI-RS-9iI"/>
+                                            <constraint firstItem="Sq1-Ai-3OE" firstAttribute="top" secondItem="NU6-Ma-FA0" secondAttribute="bottom" constant="10" id="4zV-Sj-KaA"/>
+                                            <constraint firstItem="NU6-Ma-FA0" firstAttribute="centerX" secondItem="mR2-Xb-P9a" secondAttribute="centerX" id="50S-tW-VUf"/>
+                                            <constraint firstItem="NU6-Ma-FA0" firstAttribute="width" secondItem="mR2-Xb-P9a" secondAttribute="width" multiplier="0.64" id="KKp-RM-fHM"/>
+                                            <constraint firstItem="Sq1-Ai-3OE" firstAttribute="centerX" secondItem="mR2-Xb-P9a" secondAttribute="centerX" id="mqm-Et-Mc6"/>
+                                            <constraint firstItem="Sq1-Ai-3OE" firstAttribute="height" secondItem="mR2-Xb-P9a" secondAttribute="height" multiplier="0.10396" id="pB7-Bl-4po"/>
+                                            <constraint firstItem="NU6-Ma-FA0" firstAttribute="height" secondItem="mR2-Xb-P9a" secondAttribute="height" multiplier="0.655738" id="pe6-qy-zan"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xs-bb-NBJ">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59J-nW-9qS">
+                                                <rect key="frame" x="43.666666666666657" y="31" width="120" height="120"/>
+                                                <state key="normal" title="Button" image="diferetn type of swords.jpg"/>
+                                                <connections>
+                                                    <segue destination="cQg-IM-H86" kind="show" id="q0B-BB-TJL"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipos de espada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="QFu-h0-QKZ">
+                                                <rect key="frame" x="40.666666666666657" y="161" width="126" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QFu-h0-QKZ" firstAttribute="top" secondItem="59J-nW-9qS" secondAttribute="bottom" constant="10" id="0dJ-aA-5Hq"/>
+                                            <constraint firstItem="59J-nW-9qS" firstAttribute="width" secondItem="2Xs-bb-NBJ" secondAttribute="width" multiplier="0.57971" id="7xw-f6-X9R"/>
+                                            <constraint firstItem="QFu-h0-QKZ" firstAttribute="centerX" secondItem="2Xs-bb-NBJ" secondAttribute="centerX" id="AGm-re-GvK"/>
+                                            <constraint firstItem="59J-nW-9qS" firstAttribute="centerX" secondItem="2Xs-bb-NBJ" secondAttribute="centerX" id="iC9-y7-puw"/>
+                                            <constraint firstItem="QFu-h0-QKZ" firstAttribute="height" secondItem="2Xs-bb-NBJ" secondAttribute="height" multiplier="0.10396" id="jsC-j5-JX8"/>
+                                            <constraint firstItem="QFu-h0-QKZ" firstAttribute="width" secondItem="2Xs-bb-NBJ" secondAttribute="width" multiplier="0.608696" id="lwN-x7-hqh"/>
+                                            <constraint firstItem="59J-nW-9qS" firstAttribute="centerY" secondItem="2Xs-bb-NBJ" secondAttribute="centerY" multiplier="0.9" id="utE-5o-hHl"/>
+                                            <constraint firstItem="59J-nW-9qS" firstAttribute="height" secondItem="2Xs-bb-NBJ" secondAttribute="height" multiplier="0.594059" id="zeW-so-bmJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yd-jI-Jc1">
+                                        <rect key="frame" x="207" y="406" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoO-WA-15b">
+                                                <rect key="frame" x="43.666666666666657" y="31" width="120" height="120"/>
+                                                <state key="normal" title="Button" image="colectionism (2).jpg"/>
+                                                <connections>
+                                                    <segue destination="tLV-K4-sFm" kind="show" id="7vg-yE-oMh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coleccionistas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cxY-6B-tBY">
+                                                <rect key="frame" x="48" y="161" width="111" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UoO-WA-15b" firstAttribute="centerY" secondItem="8yd-jI-Jc1" secondAttribute="centerY" multiplier="0.9" id="4kN-mX-fc5"/>
+                                            <constraint firstItem="cxY-6B-tBY" firstAttribute="height" secondItem="8yd-jI-Jc1" secondAttribute="height" multiplier="0.10396" id="7Cz-Hb-dF7"/>
+                                            <constraint firstItem="UoO-WA-15b" firstAttribute="width" secondItem="8yd-jI-Jc1" secondAttribute="width" multiplier="0.57971" id="87b-PO-ada"/>
+                                            <constraint firstItem="cxY-6B-tBY" firstAttribute="width" secondItem="8yd-jI-Jc1" secondAttribute="width" multiplier="0.536232" id="8d6-Ey-BDx"/>
+                                            <constraint firstItem="cxY-6B-tBY" firstAttribute="centerX" secondItem="8yd-jI-Jc1" secondAttribute="centerX" id="Cbx-Mg-UyQ"/>
+                                            <constraint firstItem="UoO-WA-15b" firstAttribute="centerX" secondItem="8yd-jI-Jc1" secondAttribute="centerX" id="QNN-C5-N1B"/>
+                                            <constraint firstItem="UoO-WA-15b" firstAttribute="height" secondItem="8yd-jI-Jc1" secondAttribute="height" multiplier="0.594059" id="Zyv-9g-ENg"/>
+                                            <constraint firstItem="cxY-6B-tBY" firstAttribute="top" secondItem="UoO-WA-15b" secondAttribute="bottom" constant="10" id="vuJ-af-or8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-O4-Rkg">
+                                        <rect key="frame" x="0.0" y="406" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0C-B5-zAc">
+                                                <rect key="frame" x="37.333333333333329" y="24.666666666666629" width="132.33333333333337" height="132.33333333333334"/>
+                                                <state key="normal" title="Button" image="unlimited-blade-w.jpg"/>
+                                                <connections>
+                                                    <segue destination="IUK-0T-bOZ" kind="show" id="POY-yG-6QD"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espadas en la cultura popular" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mqc-N6-JHM">
+                                                <rect key="frame" x="8" y="167" width="191" height="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="I0C-B5-zAc" firstAttribute="height" secondItem="DlK-O4-Rkg" secondAttribute="height" multiplier="0.655738" id="C08-1l-3FU"/>
+                                            <constraint firstItem="Mqc-N6-JHM" firstAttribute="height" secondItem="DlK-O4-Rkg" secondAttribute="height" multiplier="0.0841584" id="GYc-hZ-bGG"/>
+                                            <constraint firstItem="Mqc-N6-JHM" firstAttribute="centerX" secondItem="DlK-O4-Rkg" secondAttribute="centerX" id="MyH-gk-81e"/>
+                                            <constraint firstItem="Mqc-N6-JHM" firstAttribute="width" secondItem="DlK-O4-Rkg" secondAttribute="width" multiplier="0.922705" id="fby-uI-Ppk"/>
+                                            <constraint firstItem="I0C-B5-zAc" firstAttribute="centerX" secondItem="DlK-O4-Rkg" secondAttribute="centerX" id="i9r-Tg-PuF"/>
+                                            <constraint firstItem="I0C-B5-zAc" firstAttribute="centerY" secondItem="DlK-O4-Rkg" secondAttribute="centerY" multiplier="0.9" id="pfV-fd-1Zk"/>
+                                            <constraint firstItem="I0C-B5-zAc" firstAttribute="width" secondItem="DlK-O4-Rkg" secondAttribute="width" multiplier="0.64" id="qRR-JB-sO6"/>
+                                            <constraint firstItem="Mqc-N6-JHM" firstAttribute="top" secondItem="I0C-B5-zAc" secondAttribute="bottom" constant="10" id="zKU-uI-rCe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-pN-y09">
+                                        <rect key="frame" x="207" y="204" width="207" height="202"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi3-ZY-pnQ">
+                                                <rect key="frame" x="37.333333333333343" y="24.666666666666686" width="132.33333333333334" height="132.33333333333334"/>
+                                                <state key="normal" title="Button" image="samurai-sword-fight.jpg"/>
+                                                <connections>
+                                                    <segue destination="ZK3-hm-vD4" kind="show" id="14E-iH-8Vr"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arte de esgrima" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hSu-o7-Uu3">
+                                                <rect key="frame" x="42.666666666666657" y="167" width="122" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hSu-o7-Uu3" firstAttribute="centerX" secondItem="6Qr-pN-y09" secondAttribute="centerX" id="0We-d8-Tzq"/>
+                                            <constraint firstItem="hi3-ZY-pnQ" firstAttribute="height" secondItem="6Qr-pN-y09" secondAttribute="height" multiplier="0.655738" id="Cos-Li-3Hw"/>
+                                            <constraint firstItem="hSu-o7-Uu3" firstAttribute="top" secondItem="hi3-ZY-pnQ" secondAttribute="bottom" constant="10" id="Enf-tI-egM"/>
+                                            <constraint firstItem="hSu-o7-Uu3" firstAttribute="height" secondItem="6Qr-pN-y09" secondAttribute="height" multiplier="0.10396" id="JWJ-JZ-TfO"/>
+                                            <constraint firstItem="hi3-ZY-pnQ" firstAttribute="centerX" secondItem="6Qr-pN-y09" secondAttribute="centerX" id="JeD-jh-23H"/>
+                                            <constraint firstItem="hi3-ZY-pnQ" firstAttribute="width" secondItem="6Qr-pN-y09" secondAttribute="width" multiplier="0.64" id="ZWQ-76-2wf"/>
+                                            <constraint firstItem="hi3-ZY-pnQ" firstAttribute="centerY" secondItem="6Qr-pN-y09" secondAttribute="centerY" multiplier="0.9" id="gBf-Xj-uFW"/>
+                                            <constraint firstItem="hSu-o7-Uu3" firstAttribute="width" secondItem="6Qr-pN-y09" secondAttribute="width" multiplier="0.589372" id="iaC-Fc-87y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Qr-pN-y09" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="0vy-MM-khD"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Xs-bb-NBJ" secondAttribute="trailing" id="3aW-My-Cc0"/>
+                                    <constraint firstItem="mR2-Xb-P9a" firstAttribute="top" secondItem="cnG-0F-8Cr" secondAttribute="bottom" id="86G-BK-URS"/>
+                                    <constraint firstItem="cnG-0F-8Cr" firstAttribute="leading" secondItem="4pZ-Zy-HHR" secondAttribute="leading" id="8M1-Io-AQV"/>
+                                    <constraint firstItem="DlK-O4-Rkg" firstAttribute="leading" secondItem="4pZ-Zy-HHR" secondAttribute="leading" id="AWa-Zg-5pq"/>
+                                    <constraint firstItem="8yd-jI-Jc1" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="Apg-U3-zkW"/>
+                                    <constraint firstItem="2Xs-bb-NBJ" firstAttribute="top" secondItem="4pZ-Zy-HHR" secondAttribute="top" id="BnC-ik-5ET"/>
+                                    <constraint firstItem="DlK-O4-Rkg" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="Bwn-mn-GZ3"/>
+                                    <constraint firstAttribute="bottom" secondItem="8yd-jI-Jc1" secondAttribute="bottom" id="CFj-56-6AT"/>
+                                    <constraint firstAttribute="bottom" secondItem="DlK-O4-Rkg" secondAttribute="bottom" id="LIv-jg-9Oz"/>
+                                    <constraint firstItem="mR2-Xb-P9a" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="LS1-0N-A1O"/>
+                                    <constraint firstItem="mR2-Xb-P9a" firstAttribute="leading" secondItem="4pZ-Zy-HHR" secondAttribute="leading" id="LYL-tQ-aPV"/>
+                                    <constraint firstItem="2Xs-bb-NBJ" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="Ncu-hR-Fj7"/>
+                                    <constraint firstItem="mR2-Xb-P9a" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="PSc-L1-mj5"/>
+                                    <constraint firstItem="cnG-0F-8Cr" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="PUu-BB-f8i"/>
+                                    <constraint firstItem="8yd-jI-Jc1" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="V1C-ks-kAZ"/>
+                                    <constraint firstItem="2Xs-bb-NBJ" firstAttribute="height" secondItem="4pZ-Zy-HHR" secondAttribute="height" multiplier="0.332237" id="jXc-0i-9eu"/>
+                                    <constraint firstItem="cnG-0F-8Cr" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="jdK-N6-jlI"/>
+                                    <constraint firstItem="6Qr-pN-y09" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="lfz-HM-XIO"/>
+                                    <constraint firstItem="DlK-O4-Rkg" firstAttribute="width" secondItem="4pZ-Zy-HHR" secondAttribute="width" multiplier="0.5" id="nPV-S5-rOe"/>
+                                    <constraint firstItem="cnG-0F-8Cr" firstAttribute="top" secondItem="4pZ-Zy-HHR" secondAttribute="top" id="oSQ-hS-qLF"/>
+                                    <constraint firstItem="8yd-jI-Jc1" firstAttribute="top" secondItem="6Qr-pN-y09" secondAttribute="bottom" id="uIG-Mi-ewm"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Qr-pN-y09" secondAttribute="trailing" id="vI2-k0-oko"/>
+                                    <constraint firstAttribute="trailing" secondItem="8yd-jI-Jc1" secondAttribute="trailing" id="xzb-Jl-49Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m89-1c-4xZ" secondAttribute="trailing" id="1QN-U2-ByX"/>
+                            <constraint firstItem="ywX-yB-WeK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.173913" id="2bt-yb-OcV"/>
+                            <constraint firstItem="4pZ-Zy-HHR" firstAttribute="top" secondItem="ywX-yB-WeK" secondAttribute="bottom" id="68m-c8-N6i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m89-1c-4xZ" secondAttribute="bottom" id="8EZ-MH-aed"/>
+                            <constraint firstItem="m89-1c-4xZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J3Y-sB-lHs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4pZ-Zy-HHR" secondAttribute="bottom" id="QNG-lX-3lb"/>
+                            <constraint firstItem="ywX-yB-WeK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ttk-Qb-0Gm"/>
+                            <constraint firstItem="ywX-yB-WeK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aDN-3U-8bG"/>
+                            <constraint firstItem="m89-1c-4xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="duF-H0-HTi"/>
+                            <constraint firstItem="ywX-yB-WeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hVv-RB-mey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4pZ-Zy-HHR" secondAttribute="trailing" id="kfP-km-2Jn"/>
+                            <constraint firstItem="4pZ-Zy-HHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vCI-jl-aH1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.69565217391306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rU8-dK-X5a">
+            <objects>
+                <viewController id="ZeM-Tr-jI0" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CiN-bp-ieK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historyofsw.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-tQ-PbK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alH-rY-USP">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Las espadas son armas blancas que han sido utilizadas a lo largo de la historia por diferentes culturas y civilizaciones. La evolución de las espadas a lo largo de la historia incluye los siguientes puntos importantes:
+
+Antigüedad: En la antigüedad, las espadas eran de hierro y eran bastante simples. Se utilizaron en la guerra por los soldados y por los jefes tribales.
+
+Edad Media: Durante la Edad Media, las espadas se convirtieron en armas más sofisticadas y elaboradas. Se utilizaron tanto para la guerra como para los duelos. Las espadas medievales incluyen la espada longa y la espada corta.
+
+Renacimiento: Durante el Renacimiento, las espadas continuaron evolucionando. Se introdujeron nuevas técnicas de fabricación y diseños, y las espadas se convirtieron en armas más ligeras y maniobrables.
+
+Época moderna: En la época moderna, las espadas son utilizadas principalmente en deportes y artes marciales, como el esgrima. Sin embargo, todavía se utilizan en algunos regímenes militares y cerimoniales.
+
+En general, la evolución de las espadas ha sido impulsada por la necesidad de mejorar su eficacia en la guerra y los duelos, así como por la búsqueda de nuevos diseños y técnicas de fabricación. A lo largo de la historia, las espadas han sido una parte importante de la cultura y la tradición de muchas sociedades, y siguen siendo objeto de interés y estudio en la actualidad.</string>
+                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x1f-ST-CQL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x1f-ST-CQL" firstAttribute="trailing" secondItem="alH-rY-USP" secondAttribute="trailing" id="2rG-7R-tY9"/>
+                            <constraint firstItem="x1f-ST-CQL" firstAttribute="bottom" secondItem="Vta-tQ-PbK" secondAttribute="bottom" multiplier="2.5" id="4Qv-ha-fJL"/>
+                            <constraint firstItem="alH-rY-USP" firstAttribute="top" secondItem="Vta-tQ-PbK" secondAttribute="bottom" id="6Xn-0S-lec"/>
+                            <constraint firstItem="x1f-ST-CQL" firstAttribute="bottom" secondItem="alH-rY-USP" secondAttribute="bottom" id="GSb-WE-9EB"/>
+                            <constraint firstItem="Vta-tQ-PbK" firstAttribute="top" secondItem="x1f-ST-CQL" secondAttribute="top" id="cMu-Jj-qOz"/>
+                            <constraint firstItem="Vta-tQ-PbK" firstAttribute="leading" secondItem="x1f-ST-CQL" secondAttribute="leading" id="nqd-Tg-WXB"/>
+                            <constraint firstItem="x1f-ST-CQL" firstAttribute="trailing" secondItem="Vta-tQ-PbK" secondAttribute="trailing" id="qHJ-W1-ov9"/>
+                            <constraint firstItem="alH-rY-USP" firstAttribute="leading" secondItem="x1f-ST-CQL" secondAttribute="leading" id="xrB-aK-HBP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LkG-Ev-Euc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4A-zu-px8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="-238"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="old-Hy-kCT">
+            <objects>
+                <viewController id="ZK3-hm-vD4" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2m-Eh-8ZN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fight swords.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQO-OA-IaP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6CB-da-i3N">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">El arte del esgrima es una disciplina que involucra la habilidad y la técnica en el uso de espadas. En general, el esgrima se divide en dos categorías principales: la escuela europea y las formas de esgrima asiáticas.
+
+La escuela europea de esgrima incluye estilos como la esgrima renacentista, la esgrima barroca y la esgrima clásica. Estos estilos se originaron en Europa durante la Edad Media y el Renacimiento y se basan en la tradición feudal de la lucha con espadas. La escuela europea se enfoca en la técnica de corte y de estocada, y los esgrimistas suelen usar espadas largas o de dos manos para competir.
+
+Las formas de esgrima asiáticas incluyen el kendo japonés, el kumdo coreano y el wushu chino. Estos estilos se originaron en Asia y se basan en la tradición de la lucha con armas de la cultura local. Las formas de esgrima asiáticas suelen enfocarse en el control de la distancia y la estrategia, y los esgrimistas a menudo usan espadas cortas o armas similares a espadas.
+
+En el arte del esgrima, la habilidad y la técnica son claves para el éxito. Los esgrimistas deben aprender a controlar sus armas de manera segura y eficaz, y también deben desarrollar habilidades técnicas, como la defensa, el contraataque y la movilidad. Además, deben aprender a pensar estratégicamente y a reaccionar de manera rápida y efectiva durante los combates.
+
+En resumen, el arte del esgrima es una disciplina compleja que combina habilidad, técnica y estrategia para producir una experiencia emocionante e intensa. Los esgrimistas pueden aprender y competir en diferentes estilos, y su desafío constante es mejorar su habilidad y técnica para alcanzar una mayor perfección en el arte de la esgrima.</mutableString>
+                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pkb-FC-Ozw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6CB-da-i3N" firstAttribute="leading" secondItem="Pkb-FC-Ozw" secondAttribute="leading" id="2u5-2P-lbd"/>
+                            <constraint firstItem="Pkb-FC-Ozw" firstAttribute="trailing" secondItem="6CB-da-i3N" secondAttribute="trailing" id="CAZ-0w-p8h"/>
+                            <constraint firstItem="aQO-OA-IaP" firstAttribute="leading" secondItem="Pkb-FC-Ozw" secondAttribute="leading" id="Qae-yX-AjA"/>
+                            <constraint firstItem="aQO-OA-IaP" firstAttribute="top" secondItem="Pkb-FC-Ozw" secondAttribute="top" id="WR6-KI-TOT"/>
+                            <constraint firstItem="Pkb-FC-Ozw" firstAttribute="trailing" secondItem="aQO-OA-IaP" secondAttribute="trailing" id="Xyq-6v-FW0"/>
+                            <constraint firstItem="Pkb-FC-Ozw" firstAttribute="bottom" secondItem="aQO-OA-IaP" secondAttribute="bottom" multiplier="2.5" id="hif-ts-CDl"/>
+                            <constraint firstItem="6CB-da-i3N" firstAttribute="top" secondItem="aQO-OA-IaP" secondAttribute="bottom" id="oh1-kL-AqA"/>
+                            <constraint firstItem="Pkb-FC-Ozw" firstAttribute="bottom" secondItem="6CB-da-i3N" secondAttribute="bottom" id="zle-Ie-RuM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k9A-O5-z3j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCg-nI-ASm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="465"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9n3-SU-XMn">
+            <objects>
+                <viewController id="cQg-IM-H86" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elI-V9-weX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diferetn type of swords.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OEN-zp-pDf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MlN-Xm-Hkl">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <string key="text">Hay diferentes clases de espadas, cada una con características únicas que las hacen adecuadas para diferentes usos. Algunos de los tipos más comunes de espadas incluyen:
+
+Espadas de dos manos: Como su nombre indica, estas espadas se requieren de dos manos para su uso. Son más largas y pesadas que las espadas normales, y se utilizan para causar daño masivo en la batalla.
+
+Espadas largas: Las espadas largas son armas versátiles que pueden ser usadas tanto para el combate cuerpo a cuerpo como para mantener a distancia a los enemigos. Son ideales para los caballeros y soldados que necesitan una espada que les permita defenderse y atacar.
+
+Espadas cortas: Las espadas cortas son armas más pequeñas y maniobrables que se utilizan para el combate cuerpo a cuerpo. Son ideales para los soldados que necesitan un arma que les permita moverse con rapidez y agilidad en el campo de batalla.
+
+Espadas curvas: Las espadas curvas son armas típicas de la cultura oriental, especialmente de la cultura japonesa. Estas espadas tienen una hoja curva y se utilizan principalmente para el combate cuerpo a cuerpo.
+
+Espadas medievales: Las espadas medievales son armas que se utilizaron durante la Edad Media y que se caracterizan por su hoja ancha y pesada y su empuñadura gruesa. Estas espadas se utilizaron para la guerra y los duelos, y son una parte importante de la cultura y la tradición de la Edad Media.
+
+Estos son solo algunos de los tipos de espadas más comunes, y hay muchos otros tipos con características y usos únicos.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mde-Vu-AgK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MlN-Xm-Hkl" firstAttribute="top" secondItem="OEN-zp-pDf" secondAttribute="bottom" id="4S7-X8-MyH"/>
+                            <constraint firstAttribute="trailing" secondItem="OEN-zp-pDf" secondAttribute="trailing" id="9GE-0h-dZJ"/>
+                            <constraint firstItem="mde-Vu-AgK" firstAttribute="trailing" secondItem="MlN-Xm-Hkl" secondAttribute="trailing" id="A51-I2-AHK"/>
+                            <constraint firstItem="OEN-zp-pDf" firstAttribute="leading" secondItem="mde-Vu-AgK" secondAttribute="leading" id="Lw9-oO-y2F"/>
+                            <constraint firstItem="mde-Vu-AgK" firstAttribute="bottom" secondItem="OEN-zp-pDf" secondAttribute="bottom" multiplier="2.5" id="MbZ-ue-me6"/>
+                            <constraint firstItem="OEN-zp-pDf" firstAttribute="top" secondItem="mde-Vu-AgK" secondAttribute="top" id="Mck-fI-14g"/>
+                            <constraint firstItem="mde-Vu-AgK" firstAttribute="bottom" secondItem="MlN-Xm-Hkl" secondAttribute="bottom" id="MsK-ax-nZO"/>
+                            <constraint firstItem="MlN-Xm-Hkl" firstAttribute="leading" secondItem="mde-Vu-AgK" secondAttribute="leading" id="ldh-pq-Ouk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="43L-O5-Uv7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0j0-Za-HHM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="-238"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QJW-4Z-8fc">
+            <objects>
+                <viewController id="ALs-0t-STZ" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gKo-Xv-8D4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forgind swrords.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NK5-d2-XSZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gFv-av-iBv">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">El forjado de espadas es un proceso complejo y artístico que involucra la selección de materiales, la forja y el acabado de la espada. Algunos de los pasos clave en el forjado de espadas incluyen:
+
+Selección de materiales: El primer paso en el forjado de espadas es seleccionar los materiales adecuados para la hoja, el tang (la parte de la espada que se inserta en la empuñadura) y la empuñadura. Algunos materiales comunes para las hojas de espadas incluyen el acero al carbono y el acero inoxidable.
+
+Forjado: Una vez que se han seleccionado los materiales, se comienza el proceso de forjado. Esto implica calentar los materiales hasta que se vuelven maleables y luego darles la forma deseada mediante martilleo y otros procesos.
+
+Templado: Después de que se han forjado las hojas de espadas, se les somete a un proceso de templado para endurecerlas y darles más resistencia.
+
+Afilado: El siguiente paso en el forjado de espadas es afilar la hoja. Esto implica lijar y pulir la hoja para darle un filo afilado.
+
+Acabado: Por último, se le da un acabado a la espada, que puede incluir la aplicación de un revestimiento protectivo, la pulida y la decoración de la empuñadura.
+
+El forjado de espadas es un arte antiguo que requiere habilidad, experiencia y conocimiento. Los forjadores de espadas experimentados pueden crear espadas hermosas y funcionales que son únicas y que se pueden utilizar para diferentes propósitos, desde la defensa hasta la exhibición.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SlQ-j2-KW6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gFv-av-iBv" firstAttribute="leading" secondItem="SlQ-j2-KW6" secondAttribute="leading" id="7G7-8A-llJ"/>
+                            <constraint firstItem="SlQ-j2-KW6" firstAttribute="bottom" secondItem="gFv-av-iBv" secondAttribute="bottom" id="F59-SW-BUl"/>
+                            <constraint firstItem="SlQ-j2-KW6" firstAttribute="bottom" secondItem="NK5-d2-XSZ" secondAttribute="bottom" multiplier="2.5" id="N3T-uo-UxD"/>
+                            <constraint firstItem="NK5-d2-XSZ" firstAttribute="leading" secondItem="SlQ-j2-KW6" secondAttribute="leading" id="PKf-kL-uga"/>
+                            <constraint firstItem="SlQ-j2-KW6" firstAttribute="trailing" secondItem="NK5-d2-XSZ" secondAttribute="trailing" id="ZFr-J2-S7D"/>
+                            <constraint firstItem="SlQ-j2-KW6" firstAttribute="trailing" secondItem="gFv-av-iBv" secondAttribute="trailing" id="bmy-8u-GiF"/>
+                            <constraint firstItem="gFv-av-iBv" firstAttribute="top" secondItem="NK5-d2-XSZ" secondAttribute="bottom" id="ji1-xq-WHX"/>
+                            <constraint firstItem="NK5-d2-XSZ" firstAttribute="top" secondItem="SlQ-j2-KW6" secondAttribute="top" id="zQJ-6g-7W8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ja-Dz-lzh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arD-XM-ACs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="465"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Gx-NV-ifa">
+            <objects>
+                <viewController id="omD-L8-lDa" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ukq-JJ-lhX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arjunaAlter.png" translatesAutoresizingMaskIntoConstraints="NO" id="abR-MJ-UU8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tuS-CF-TfQ">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Alumno:                                                                 Victor Isaac Almanza Perez.                                             Clase:                                        Desarrollo Movil Multiplataforma.                     Maestro:                                                                    Jesus Adrian Burciaga Perez.                                              Matricula del alumno:                    22170002.                                        Institucion:                                Universidad Tecnologica de Torreon.                                             Grupo:                                                      5B.</mutableString>
+                                <color key="textColor" red="1" green="0.96920531259999998" blue="0.95267498530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u2h-RL-hTg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abR-MJ-UU8" firstAttribute="leading" secondItem="u2h-RL-hTg" secondAttribute="leading" id="710-tk-bRv"/>
+                            <constraint firstItem="tuS-CF-TfQ" firstAttribute="leading" secondItem="u2h-RL-hTg" secondAttribute="leading" id="7I5-LN-dcd"/>
+                            <constraint firstItem="u2h-RL-hTg" firstAttribute="trailing" secondItem="tuS-CF-TfQ" secondAttribute="trailing" id="9os-M3-ZV2"/>
+                            <constraint firstItem="u2h-RL-hTg" firstAttribute="trailing" secondItem="abR-MJ-UU8" secondAttribute="trailing" id="GFu-ba-nNa"/>
+                            <constraint firstItem="tuS-CF-TfQ" firstAttribute="top" secondItem="abR-MJ-UU8" secondAttribute="bottom" id="Zms-YB-OOJ"/>
+                            <constraint firstItem="u2h-RL-hTg" firstAttribute="bottom" secondItem="abR-MJ-UU8" secondAttribute="bottom" multiplier="2.5" id="s3K-ZK-s4X"/>
+                            <constraint firstItem="u2h-RL-hTg" firstAttribute="bottom" secondItem="tuS-CF-TfQ" secondAttribute="bottom" id="txw-YJ-UXu"/>
+                            <constraint firstItem="abR-MJ-UU8" firstAttribute="top" secondItem="u2h-RL-hTg" secondAttribute="top" id="vMf-Ec-X7N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2q0-26-mLS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMP-cy-2zq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="-577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LGJ-9w-4Ok">
+            <objects>
+                <viewController id="IUK-0T-bOZ" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2f2-Xy-cGo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ubqw.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-rJ-qJt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-8x-xiQ">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Las espadas han sido un elemento recurrente en la cultura popular a lo largo de la historia. Desde las épicas historias de caballeros y aventuras hasta los juegos de video futuristas, las espadas han sido utilizadas como símbolo de valentía, honor y poder.
+
+En películas, las espadas han sido un elemento importante en géneros como la fantasía, la aventura y el cine de acción. Desde las clásicas películas de aventuras como "Robin Hood" hasta las épicas películas de fantasía como "El Señor de los Anillos", las espadas han sido utilizadas para crear un ambiente épico y añadir un elemento de acción a la trama.
+
+En libros, las espadas han sido un elemento recurrente en historias de fantasía, aventuras y ciencia ficción. Desde los clásicos libros de caballería hasta las épicas novelas de fantasía, las espadas han sido utilizadas como un arma para resolver conflictos y proteger a los personajes.
+
+En videojuegos, las espadas han sido un elemento popular en géneros como la aventura, la fantasía y la acción. Desde los clásicos juegos de aventura como "The Legend of Zelda" hasta los juegos de fantasía épicos como "Final Fantasy", las espadas han sido utilizadas como un arma principal para combatir a los enemigos y completar misiones.
+
+En resumen, las espadas han sido un elemento importante en la cultura popular y han sido representadas de muchas maneras en películas, libros y videojuegos. Su representación en la cultura popular ha sido influenciada por la historia y la tradición, y ha sido utilizada para crear un ambiente épico y añadir un elemento de acción a las tramas.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="syX-tL-ldZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="syX-tL-ldZ" firstAttribute="bottom" secondItem="aHd-8x-xiQ" secondAttribute="bottom" id="22d-oE-oIt"/>
+                            <constraint firstItem="bfx-rJ-qJt" firstAttribute="leading" secondItem="syX-tL-ldZ" secondAttribute="leading" id="72b-uK-olq"/>
+                            <constraint firstItem="aHd-8x-xiQ" firstAttribute="top" secondItem="bfx-rJ-qJt" secondAttribute="bottom" id="CpD-6j-y1j"/>
+                            <constraint firstItem="aHd-8x-xiQ" firstAttribute="leading" secondItem="syX-tL-ldZ" secondAttribute="leading" id="FSS-Ts-tMv"/>
+                            <constraint firstItem="bfx-rJ-qJt" firstAttribute="top" secondItem="syX-tL-ldZ" secondAttribute="top" id="LfU-p1-ja6"/>
+                            <constraint firstItem="syX-tL-ldZ" firstAttribute="trailing" secondItem="aHd-8x-xiQ" secondAttribute="trailing" id="MyH-e3-DPp"/>
+                            <constraint firstItem="syX-tL-ldZ" firstAttribute="trailing" secondItem="bfx-rJ-qJt" secondAttribute="trailing" id="tw1-L0-OYj"/>
+                            <constraint firstItem="syX-tL-ldZ" firstAttribute="bottom" secondItem="bfx-rJ-qJt" secondAttribute="bottom" multiplier="2.5" id="wfh-Xr-cyZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Q8-tn-iE2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUD-yz-1L4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="825"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zai-Vz-hQD">
+            <objects>
+                <viewController id="tLV-K4-sFm" customClass="ViewController" customModule="Prueba2Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hU9-3B-dpl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection-of-swords (2).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-3S-dEc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-Ed-pWP">
+                                <rect key="frame" x="0.0" y="286.33333333333326" width="414" height="429.66666666666674"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <mutableString key="text">Hay una comunidad dedicada de coleccionistas y aficionados de espadas que se reúne en eventos, ferias y en línea para compartir su interés por estas armas antiguas y raras. La colección de espadas puede ser un pasatiempo costoso, pero también puede ser muy gratificante para aquellos interesados en la historia, la tradición y el arte de la espada.
+
+Los coleccionistas de espadas compran, venden y intercambian espadas antiguas y raras, buscando adquirir ejemplares únicos y valiosos. Algunos coleccionistas se especializan en espadas de una época o región específica, mientras que otros buscan adquirir una variedad de espadas de diferentes épocas y culturas.
+
+Además, hay una gran cantidad de aficionados de esgrima que practican la esgrima con espadas de madera o imitaciones, y utilizan sus habilidades y técnicas en competiciones y demostraciones. La práctica de la esgrima con espadas es un arte que requiere habilidad, técnica y mucha práctica, y es apreciada tanto por los coleccionistas como por los aficionados de esgrima.
+
+En resumen, la comunidad de coleccionistas y aficionados de espadas es un grupo diverso de personas interesadas en la historia, el arte y la tradición de las espadas. Estos coleccionistas y aficionados compran, venden y intercambian espadas antiguas y raras, y practican la esgrima con espadas de madera o imitaciones.
+</mutableString>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ygq-xK-hAq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ygq-xK-hAq" firstAttribute="trailing" secondItem="h9d-Ed-pWP" secondAttribute="trailing" id="2LM-xm-VSI"/>
+                            <constraint firstItem="6Yk-3S-dEc" firstAttribute="top" secondItem="ygq-xK-hAq" secondAttribute="top" id="TQj-UD-SIW"/>
+                            <constraint firstItem="h9d-Ed-pWP" firstAttribute="top" secondItem="6Yk-3S-dEc" secondAttribute="bottom" id="UF4-Po-yci"/>
+                            <constraint firstItem="h9d-Ed-pWP" firstAttribute="leading" secondItem="ygq-xK-hAq" secondAttribute="leading" id="bmy-xb-PUt"/>
+                            <constraint firstItem="ygq-xK-hAq" firstAttribute="bottom" secondItem="h9d-Ed-pWP" secondAttribute="bottom" id="kmv-b8-i1d"/>
+                            <constraint firstItem="ygq-xK-hAq" firstAttribute="bottom" secondItem="6Yk-3S-dEc" secondAttribute="bottom" multiplier="2.5" id="l5q-m6-peZ"/>
+                            <constraint firstItem="6Yk-3S-dEc" firstAttribute="leading" secondItem="ygq-xK-hAq" secondAttribute="leading" id="tX4-aK-NmJ"/>
+                            <constraint firstItem="ygq-xK-hAq" firstAttribute="trailing" secondItem="6Yk-3S-dEc" secondAttribute="trailing" id="xKf-c9-AcO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l4R-8x-Z4p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9La-zd-Raz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="1136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blacksmith-Swordsmith- (2).png" width="370.5" height="371.25"/>
+        <image name="Historia de las espadas.jpg" width="1280" height="720"/>
+        <image name="arjunaAlter.png" width="384" height="303.75"/>
+        <image name="colectionism (2).jpg" width="960" height="960"/>
+        <image name="collection-of-swords (2).jpg" width="312" height="206.16000366210938"/>
+        <image name="diferetn type of swords.jpg" width="216" height="245.75999450683594"/>
+        <image name="fight swords.png" width="1080" height="607"/>
+        <image name="fondo samurai.jpg" width="2160" height="3840"/>
+        <image name="forgind swrords.jpg" width="122.16000366210938" height="81.360000610351562"/>
+        <image name="historyofsw.png" width="500" height="670"/>
+        <image name="imagen_2023-02-09_162518328-removebg-preview.png" width="850" height="210"/>
+        <image name="samurai-sword-fight.jpg" width="640" height="400"/>
+        <image name="swords-power.png" width="320" height="320"/>
+        <image name="ubqw.jpg" width="728" height="410"/>
+        <image name="unlimited-blade-w.jpg" width="1280" height="720"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
